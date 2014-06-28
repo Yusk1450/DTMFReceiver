@@ -21,6 +21,9 @@
 		6A17A786195E89AC007E40C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A17A768195E89AC007E40C1 /* UIKit.framework */; };
 		6A17A78E195E89AC007E40C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A17A78C195E89AC007E40C1 /* InfoPlist.strings */; };
 		6A17A790195E89AC007E40C1 /* DTMFReceiverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A17A78F195E89AC007E40C1 /* DTMFReceiverTests.m */; };
+		6A7E6C4B195E8C15008AA502 /* FFT.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7E6C4A195E8C15008AA502 /* FFT.m */; };
+		6A7E6C4D195E8E99008AA502 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7E6C4C195E8E99008AA502 /* Accelerate.framework */; };
+		6D5814C5C118467EA89042A3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7792F4EEA94249C1AEE6AF35 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0499395A62964EBC9CCD2826 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		6A17A761195E89AC007E40C1 /* DTMFReceiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTMFReceiver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A17A764195E89AC007E40C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6A17A766195E89AC007E40C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,10 @@
 		6A17A78B195E89AC007E40C1 /* DTMFReceiverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DTMFReceiverTests-Info.plist"; sourceTree = "<group>"; };
 		6A17A78D195E89AC007E40C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A17A78F195E89AC007E40C1 /* DTMFReceiverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTMFReceiverTests.m; sourceTree = "<group>"; };
+		6A7E6C49195E8C15008AA502 /* FFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFT.h; sourceTree = "<group>"; };
+		6A7E6C4A195E8C15008AA502 /* FFT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFT.m; sourceTree = "<group>"; };
+		6A7E6C4C195E8E99008AA502 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7792F4EEA94249C1AEE6AF35 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +68,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A7E6C4D195E8E99008AA502 /* Accelerate.framework in Frameworks */,
 				6A17A767195E89AC007E40C1 /* CoreGraphics.framework in Frameworks */,
 				6A17A769195E89AC007E40C1 /* UIKit.framework in Frameworks */,
 				6A17A765195E89AC007E40C1 /* Foundation.framework in Frameworks */,
+				6D5814C5C118467EA89042A3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +96,7 @@
 				6A17A789195E89AC007E40C1 /* DTMFReceiverTests */,
 				6A17A763195E89AC007E40C1 /* Frameworks */,
 				6A17A762195E89AC007E40C1 /* Products */,
+				0499395A62964EBC9CCD2826 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +112,12 @@
 		6A17A763195E89AC007E40C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A7E6C4C195E8E99008AA502 /* Accelerate.framework */,
 				6A17A764195E89AC007E40C1 /* Foundation.framework */,
 				6A17A766195E89AC007E40C1 /* CoreGraphics.framework */,
 				6A17A768195E89AC007E40C1 /* UIKit.framework */,
 				6A17A783195E89AC007E40C1 /* XCTest.framework */,
+				7792F4EEA94249C1AEE6AF35 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +125,8 @@
 		6A17A76A195E89AC007E40C1 /* DTMFReceiver */ = {
 			isa = PBXGroup;
 			children = (
+				6A7E6C49195E8C15008AA502 /* FFT.h */,
+				6A7E6C4A195E8C15008AA502 /* FFT.m */,
 				6A17A773195E89AC007E40C1 /* AppDelegate.h */,
 				6A17A774195E89AC007E40C1 /* AppDelegate.m */,
 				6A17A776195E89AC007E40C1 /* Main.storyboard */,
@@ -159,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A17A793195E89AC007E40C1 /* Build configuration list for PBXNativeTarget "DTMFReceiver" */;
 			buildPhases = (
+				1B4BBEE2258B4C33969E5B4A /* Check Pods Manifest.lock */,
 				6A17A75D195E89AC007E40C1 /* Sources */,
 				6A17A75E195E89AC007E40C1 /* Frameworks */,
 				6A17A75F195E89AC007E40C1 /* Resources */,
+				734CFDEC41784C3AB6A04796 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,11 +261,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B4BBEE2258B4C33969E5B4A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		734CFDEC41784C3AB6A04796 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6A17A75D195E89AC007E40C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A7E6C4B195E8C15008AA502 /* FFT.m in Sources */,
 				6A17A77B195E89AC007E40C1 /* ViewController.m in Sources */,
 				6A17A775195E89AC007E40C1 /* AppDelegate.m in Sources */,
 				6A17A771195E89AC007E40C1 /* main.m in Sources */,
@@ -373,6 +424,7 @@
 		};
 		6A17A794195E89AC007E40C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0499395A62964EBC9CCD2826 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -386,6 +438,7 @@
 		};
 		6A17A795195E89AC007E40C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0499395A62964EBC9CCD2826 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -456,6 +509,7 @@
 				6A17A795195E89AC007E40C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A17A796195E89AC007E40C1 /* Build configuration list for PBXNativeTarget "DTMFReceiverTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +518,7 @@
 				6A17A798195E89AC007E40C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
