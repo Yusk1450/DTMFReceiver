@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A17A765195E89AC007E40C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A17A764195E89AC007E40C1 /* Foundation.framework */; };
+		6A17A767195E89AC007E40C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A17A766195E89AC007E40C1 /* CoreGraphics.framework */; };
+		6A17A769195E89AC007E40C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A17A768195E89AC007E40C1 /* UIKit.framework */; };
+		6A17A76F195E89AC007E40C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A17A76D195E89AC007E40C1 /* InfoPlist.strings */; };
+		6A17A771195E89AC007E40C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A17A770195E89AC007E40C1 /* main.m */; };
+		6A17A775195E89AC007E40C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A17A774195E89AC007E40C1 /* AppDelegate.m */; };
+		6A17A778195E89AC007E40C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A17A776195E89AC007E40C1 /* Main.storyboard */; };
+		6A17A77B195E89AC007E40C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A17A77A195E89AC007E40C1 /* ViewController.m */; };
+		6A17A77D195E89AC007E40C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A17A77C195E89AC007E40C1 /* Images.xcassets */; };
+		6A17A784195E89AC007E40C1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A17A783195E89AC007E40C1 /* XCTest.framework */; };
+		6A17A785195E89AC007E40C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A17A764195E89AC007E40C1 /* Foundation.framework */; };
+		6A17A786195E89AC007E40C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A17A768195E89AC007E40C1 /* UIKit.framework */; };
+		6A17A78E195E89AC007E40C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A17A78C195E89AC007E40C1 /* InfoPlist.strings */; };
+		6A17A790195E89AC007E40C1 /* DTMFReceiverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A17A78F195E89AC007E40C1 /* DTMFReceiverTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A17A787195E89AC007E40C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A17A759195E89AC007E40C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A17A760195E89AC007E40C1;
+			remoteInfo = DTMFReceiver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A17A761195E89AC007E40C1 /* DTMFReceiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTMFReceiver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A17A764195E89AC007E40C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6A17A766195E89AC007E40C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6A17A768195E89AC007E40C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6A17A76C195E89AC007E40C1 /* DTMFReceiver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DTMFReceiver-Info.plist"; sourceTree = "<group>"; };
+		6A17A76E195E89AC007E40C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6A17A770195E89AC007E40C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6A17A772195E89AC007E40C1 /* DTMFReceiver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DTMFReceiver-Prefix.pch"; sourceTree = "<group>"; };
+		6A17A773195E89AC007E40C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6A17A774195E89AC007E40C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6A17A777195E89AC007E40C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A17A779195E89AC007E40C1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6A17A77A195E89AC007E40C1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6A17A77C195E89AC007E40C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6A17A782195E89AC007E40C1 /* DTMFReceiverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DTMFReceiverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A17A783195E89AC007E40C1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6A17A78B195E89AC007E40C1 /* DTMFReceiverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DTMFReceiverTests-Info.plist"; sourceTree = "<group>"; };
+		6A17A78D195E89AC007E40C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6A17A78F195E89AC007E40C1 /* DTMFReceiverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTMFReceiverTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A17A75E195E89AC007E40C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A17A767195E89AC007E40C1 /* CoreGraphics.framework in Frameworks */,
+				6A17A769195E89AC007E40C1 /* UIKit.framework in Frameworks */,
+				6A17A765195E89AC007E40C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A17A77F195E89AC007E40C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A17A784195E89AC007E40C1 /* XCTest.framework in Frameworks */,
+				6A17A786195E89AC007E40C1 /* UIKit.framework in Frameworks */,
+				6A17A785195E89AC007E40C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A17A758195E89AC007E40C1 = {
+			isa = PBXGroup;
+			children = (
+				6A17A76A195E89AC007E40C1 /* DTMFReceiver */,
+				6A17A789195E89AC007E40C1 /* DTMFReceiverTests */,
+				6A17A763195E89AC007E40C1 /* Frameworks */,
+				6A17A762195E89AC007E40C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A17A762195E89AC007E40C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A17A761195E89AC007E40C1 /* DTMFReceiver.app */,
+				6A17A782195E89AC007E40C1 /* DTMFReceiverTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A17A763195E89AC007E40C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A17A764195E89AC007E40C1 /* Foundation.framework */,
+				6A17A766195E89AC007E40C1 /* CoreGraphics.framework */,
+				6A17A768195E89AC007E40C1 /* UIKit.framework */,
+				6A17A783195E89AC007E40C1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A17A76A195E89AC007E40C1 /* DTMFReceiver */ = {
+			isa = PBXGroup;
+			children = (
+				6A17A773195E89AC007E40C1 /* AppDelegate.h */,
+				6A17A774195E89AC007E40C1 /* AppDelegate.m */,
+				6A17A776195E89AC007E40C1 /* Main.storyboard */,
+				6A17A779195E89AC007E40C1 /* ViewController.h */,
+				6A17A77A195E89AC007E40C1 /* ViewController.m */,
+				6A17A77C195E89AC007E40C1 /* Images.xcassets */,
+				6A17A76B195E89AC007E40C1 /* Supporting Files */,
+			);
+			path = DTMFReceiver;
+			sourceTree = "<group>";
+		};
+		6A17A76B195E89AC007E40C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A17A76C195E89AC007E40C1 /* DTMFReceiver-Info.plist */,
+				6A17A76D195E89AC007E40C1 /* InfoPlist.strings */,
+				6A17A770195E89AC007E40C1 /* main.m */,
+				6A17A772195E89AC007E40C1 /* DTMFReceiver-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A17A789195E89AC007E40C1 /* DTMFReceiverTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A17A78F195E89AC007E40C1 /* DTMFReceiverTests.m */,
+				6A17A78A195E89AC007E40C1 /* Supporting Files */,
+			);
+			path = DTMFReceiverTests;
+			sourceTree = "<group>";
+		};
+		6A17A78A195E89AC007E40C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A17A78B195E89AC007E40C1 /* DTMFReceiverTests-Info.plist */,
+				6A17A78C195E89AC007E40C1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A17A760195E89AC007E40C1 /* DTMFReceiver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A17A793195E89AC007E40C1 /* Build configuration list for PBXNativeTarget "DTMFReceiver" */;
+			buildPhases = (
+				6A17A75D195E89AC007E40C1 /* Sources */,
+				6A17A75E195E89AC007E40C1 /* Frameworks */,
+				6A17A75F195E89AC007E40C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DTMFReceiver;
+			productName = DTMFReceiver;
+			productReference = 6A17A761195E89AC007E40C1 /* DTMFReceiver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A17A781195E89AC007E40C1 /* DTMFReceiverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A17A796195E89AC007E40C1 /* Build configuration list for PBXNativeTarget "DTMFReceiverTests" */;
+			buildPhases = (
+				6A17A77E195E89AC007E40C1 /* Sources */,
+				6A17A77F195E89AC007E40C1 /* Frameworks */,
+				6A17A780195E89AC007E40C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A17A788195E89AC007E40C1 /* PBXTargetDependency */,
+			);
+			name = DTMFReceiverTests;
+			productName = DTMFReceiverTests;
+			productReference = 6A17A782195E89AC007E40C1 /* DTMFReceiverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A17A759195E89AC007E40C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Yusk;
+				TargetAttributes = {
+					6A17A781195E89AC007E40C1 = {
+						TestTargetID = 6A17A760195E89AC007E40C1;
+					};
+				};
+			};
+			buildConfigurationList = 6A17A75C195E89AC007E40C1 /* Build configuration list for PBXProject "DTMFReceiver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A17A758195E89AC007E40C1;
+			productRefGroup = 6A17A762195E89AC007E40C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A17A760195E89AC007E40C1 /* DTMFReceiver */,
+				6A17A781195E89AC007E40C1 /* DTMFReceiverTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A17A75F195E89AC007E40C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A17A77D195E89AC007E40C1 /* Images.xcassets in Resources */,
+				6A17A76F195E89AC007E40C1 /* InfoPlist.strings in Resources */,
+				6A17A778195E89AC007E40C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A17A780195E89AC007E40C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A17A78E195E89AC007E40C1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A17A75D195E89AC007E40C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A17A77B195E89AC007E40C1 /* ViewController.m in Sources */,
+				6A17A775195E89AC007E40C1 /* AppDelegate.m in Sources */,
+				6A17A771195E89AC007E40C1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A17A77E195E89AC007E40C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A17A790195E89AC007E40C1 /* DTMFReceiverTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A17A788195E89AC007E40C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A17A760195E89AC007E40C1 /* DTMFReceiver */;
+			targetProxy = 6A17A787195E89AC007E40C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A17A76D195E89AC007E40C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A17A76E195E89AC007E40C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6A17A776195E89AC007E40C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A17A777195E89AC007E40C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A17A78C195E89AC007E40C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A17A78D195E89AC007E40C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A17A791195E89AC007E40C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6A17A792195E89AC007E40C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A17A794195E89AC007E40C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DTMFReceiver/DTMFReceiver-Prefix.pch";
+				INFOPLIST_FILE = "DTMFReceiver/DTMFReceiver-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6A17A795195E89AC007E40C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DTMFReceiver/DTMFReceiver-Prefix.pch";
+				INFOPLIST_FILE = "DTMFReceiver/DTMFReceiver-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6A17A797195E89AC007E40C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DTMFReceiver.app/DTMFReceiver";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DTMFReceiver/DTMFReceiver-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DTMFReceiverTests/DTMFReceiverTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6A17A798195E89AC007E40C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DTMFReceiver.app/DTMFReceiver";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DTMFReceiver/DTMFReceiver-Prefix.pch";
+				INFOPLIST_FILE = "DTMFReceiverTests/DTMFReceiverTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A17A75C195E89AC007E40C1 /* Build configuration list for PBXProject "DTMFReceiver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A17A791195E89AC007E40C1 /* Debug */,
+				6A17A792195E89AC007E40C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A17A793195E89AC007E40C1 /* Build configuration list for PBXNativeTarget "DTMFReceiver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A17A794195E89AC007E40C1 /* Debug */,
+				6A17A795195E89AC007E40C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6A17A796195E89AC007E40C1 /* Build configuration list for PBXNativeTarget "DTMFReceiverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A17A797195E89AC007E40C1 /* Debug */,
+				6A17A798195E89AC007E40C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A17A759195E89AC007E40C1 /* Project object */;
+}
