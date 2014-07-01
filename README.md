@@ -1,7 +1,5 @@
 DTMFReceiver
 ===============
 
-概要
----------------
-DTMFをデコードするサンプルプログラムです。
+This is the sample code for detecting a DTMF tones.
 
